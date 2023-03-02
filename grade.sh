@@ -52,6 +52,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 # get line 2 of junit test output. looks something like "..E."
 # each dot is an chars test and each "E" is an error
 sed '2q;d' junit.txt > line_2.txt
+
 LINE_2=line_2.txt
 
 # write each "E" to its own line in failures.txt
